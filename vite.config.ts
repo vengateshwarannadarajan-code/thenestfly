@@ -16,7 +16,7 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
-  base: '/',
+  base: '/thenestfly/',
   plugins: [
     figmaAssetResolver(),
     react(),

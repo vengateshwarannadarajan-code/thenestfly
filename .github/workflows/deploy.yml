@@ -25,10 +25,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
       - name: Install dependencies
         run: npm install --legacy-peer-deps
+
+      - name: Install React explicitly
+        run: npm install --save react@18 react-dom@18 --legacy-peer-deps
 
       - name: Build
         run: npm run build

@@ -62,9 +62,7 @@ function App() {
             {/* CTA Button */}
             <div className="hidden md:block">
               <a 
-                href="https://wa.me/919442158348" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="#contact"
                 className="bg-[#f97316] text-white px-6 py-2.5 rounded-lg hover:bg-[#ea580c] transition-colors"
               >
                 Book Free Consultation
@@ -89,9 +87,7 @@ function App() {
                 <a href="#destinations" className="text-[#1f2937] hover:text-[#0891b2]" onClick={() => setMobileMenuOpen(false)}>Destinations</a>
                 <a href="#contact" className="text-[#1f2937] hover:text-[#0891b2]" onClick={() => setMobileMenuOpen(false)}>Contact</a>
                 <a 
-                  href="https://wa.me/919442158348" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                  href="#contact"
                   className="bg-[#f97316] text-white px-6 py-2.5 rounded-lg text-center hover:bg-[#ea580c] transition-colors"
                 >
                   Book Free Consultation
@@ -125,9 +121,7 @@ function App() {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <a 
-                  href="https://wa.me/919442158348" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                  href="#contact"
                   className="bg-[#f97316] text-white px-8 py-3.5 rounded-lg hover:bg-[#ea580c] transition-all hover:scale-105 text-center"
                 >
                   Book Free Consultation

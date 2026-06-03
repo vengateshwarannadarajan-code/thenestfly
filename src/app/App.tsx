@@ -22,6 +22,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
+import ConsultationForm from './components/ConsultationForm';
 const LogoFull = '/logo.jpeg';
 const LogoIcon = '/logo-icon.jpeg';
 
@@ -118,7 +119,7 @@ function App() {
 
               {/* Subtext */}
               <p className="text-lg mb-8 text-white/90 max-w-[700px]">
-                NestFly guides students from Tamil Nadu and across India through every step of studying abroad: university selection, applications, test prep, loans, visas, and accommodation. Free for students. Always.
+                NestFly guides students from India and across South Asia through every step of studying abroad: university selection, applications, test prep, loans, visas, and accommodation. Free for students. Always.
               </p>
 
               {/* CTA Buttons */}
@@ -737,6 +738,9 @@ function App() {
               Book your free 30-minute consultation. No pressure. No commitment. Just clarity on your path forward.
             </p>
           </div>
+
+          {/* Consultation Form */}
+          <ConsultationForm />
 
           {/* Contact Cards */}
           <div className="grid md:grid-cols-3 gap-6 mb-8">

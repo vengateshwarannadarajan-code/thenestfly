@@ -18,9 +18,7 @@ import {
   CheckCircle2,
   Star,
   Instagram,
-  Facebook,
   Linkedin,
-  Youtube,
   ChevronRight
 } from 'lucide-react';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
@@ -41,7 +39,7 @@ function App() {
               {/* Desktop Logo - Full version */}
               <ImageWithFallback
                 src={LogoFull}
-                alt="NestFly - Dream. Fly. Achieve."
+                alt="NestFly Logo"
                 className="hidden sm:block h-12 w-auto"
               />
               {/* Mobile Logo - Icon only */}
@@ -120,7 +118,7 @@ function App() {
 
               {/* Subtext */}
               <p className="text-lg mb-8 text-white/90 max-w-[700px]">
-                NestFly guides students from Tamil Nadu and across India through every step of studying abroad — university selection, applications, test prep, loans, visas, and accommodation. Free for students. Always.
+                NestFly guides students from Tamil Nadu and across India through every step of studying abroad: university selection, applications, test prep, loans, visas, and accommodation. Free for students. Always.
               </p>
 
               {/* CTA Buttons */}
@@ -215,7 +213,7 @@ function App() {
                 Application Support
               </h3>
               <p className="text-sm text-[#6b7280] leading-relaxed">
-                We guide you through every document — SOP, LORs, transcripts, deadlines. We manage your complete application submission. You focus on preparation, we handle the paperwork.
+                We guide you through every document including SOP, LORs, transcripts, and deadlines. We manage your complete application submission. You focus on preparation, we handle the paperwork.
               </p>
             </div>
 
@@ -241,7 +239,7 @@ function App() {
                 Education Loans
               </h3>
               <p className="text-sm text-[#6b7280] leading-relaxed">
-                End-to-end overseas education loan assistance — documentation support, lender matching, and real-time loan status updates. We help you understand exactly what you are signing.
+                End to end overseas education loan assistance covering documentation support, lender matching, and real-time loan status updates. We help you understand exactly what you are signing.
               </p>
             </div>
 
@@ -254,7 +252,7 @@ function App() {
                 Visa Guidance
               </h3>
               <p className="text-sm text-[#6b7280] leading-relaxed">
-                Offer letter secured — now what? We walk you through every visa document, timeline, and submission requirement. France, UK, Canada, Australia, Germany — we know the difference.
+                Offer letter secured. Now what? We walk you through every visa document, timeline, and submission requirement. France, UK, Canada, Australia, Germany. We know the difference.
               </p>
             </div>
 
@@ -280,7 +278,7 @@ function App() {
                 Accommodation Support
               </h3>
               <p className="text-sm text-[#6b7280] leading-relaxed">
-                Finding housing abroad is often harder than the visa. We help you explore verified accommodation options before you land — so you arrive with a place to stay.
+                Finding housing abroad is often harder than the visa. We help you explore verified accommodation options before you land so you arrive with a place to stay.
               </p>
             </div>
           </div>
@@ -439,7 +437,7 @@ function App() {
                   Free Consultation
                 </h3>
                 <p className="text-sm text-[#6b7280] leading-relaxed">
-                  Book a 30-minute call. Tell us your background, budget, and dream. We listen first, advise second. Private or public, funded or self-financed — we build the path around you.
+                  Book a 30-minute call. Tell us your background, budget, and dream. We listen first, advise second. Private or public, funded or self-financed. We build the path around you.
                 </p>
               </div>
             </div>
@@ -455,7 +453,7 @@ function App() {
                   Shortlist & Apply
                 </h3>
                 <p className="text-sm text-[#6b7280] leading-relaxed">
-                  We shortlist best-fit universities — private and public — and handle your complete application. SOP, documents, submission, follow-up.
+                  We shortlist best-fit universities, both private and public, and handle your complete application. SOP, documents, submission, follow-up.
                 </p>
               </div>
             </div>
@@ -523,11 +521,11 @@ function App() {
               <div className="flex items-center gap-3">
                 <ImageWithFallback 
                   src="https://images.unsplash.com/photo-1667655861998-46fe4c29a4cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBzdHVkZW50JTIwc21pbGluZyUyMHBvcnRyYWl0JTIweW91bmd8ZW58MXx8fHwxNzgwMTQ3MTkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Student R.K."
+                  alt="M. Santhosh Kumar"
                   className="w-12 h-12 rounded-full object-cover"
                 />
                 <div>
-                  <div className="text-[#1e40af]" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600 }}>R.K.</div>
+                  <div className="text-[#1e40af]" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600 }}>M. Santhosh Kumar</div>
                   <div className="text-sm text-[#6b7280]">MSc Finance, France 2025</div>
                 </div>
               </div>
@@ -541,17 +539,17 @@ function App() {
                 ))}
               </div>
               <p className="text-[#6b7280] italic mb-6 leading-relaxed">
-                "As a parent from Tuticorin, I was anxious about sending my daughter abroad. The team explained everything clearly and gave our family real confidence. She is now in Toronto."
+                "As a parent from Tuticorin, I was anxious about sending my daughter abroad. The team explained everything clearly and gave our family real confidence. She is now in Christ Church."
               </p>
               <div className="flex items-center gap-3">
                 <ImageWithFallback 
                   src="https://images.unsplash.com/photo-1623461487986-9400110de28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmZW1hbGUlMjBzdHVkZW50JTIwZ3JhZHVhdGlvbiUyMHN1Y2Nlc3MlMjBwcm91ZHxlbnwxfHx8fDE3ODAxNDcxOTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Parent S.M."
+                  alt="S. Murugan"
                   className="w-12 h-12 rounded-full object-cover"
                 />
                 <div>
-                  <div className="text-[#1e40af]" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600 }}>S.M.</div>
-                  <div className="text-sm text-[#6b7280]">Parent, daughter in Canada</div>
+                  <div className="text-[#1e40af]" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600 }}>S. Murugan</div>
+                  <div className="text-sm text-[#6b7280]">Parent, daughter in New Zealand</div>
                 </div>
               </div>
             </div>
@@ -564,16 +562,16 @@ function App() {
                 ))}
               </div>
               <p className="text-[#6b7280] italic mb-6 leading-relaxed">
-                "I had a complex profile — BE Mechanical switching to management. They found the right public university programme in Germany with very low tuition fees."
+                "I had a complex profile. BE Mechanical switching to management. They found the right public university programme in Germany with very low tuition fees."
               </p>
               <div className="flex items-center gap-3">
                 <ImageWithFallback 
                   src="https://images.unsplash.com/photo-1760552069234-54b9c04bbb05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHdvbWFuJTIwc3R1ZGVudCUyMHNtaWxpbmclMjBib29rc3xlbnwxfHx8fDE3ODAxNDcxOTR8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Student A.P."
+                  alt="Karthik Santhanam"
                   className="w-12 h-12 rounded-full object-cover"
                 />
                 <div>
-                  <div className="text-[#1e40af]" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600 }}>A.P.</div>
+                  <div className="text-[#1e40af]" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600 }}>Karthik Santhanam</div>
                   <div className="text-sm text-[#6b7280]">MSc Management, Germany 2024</div>
                 </div>
               </div>
@@ -742,9 +740,9 @@ function App() {
               <h3 className="text-lg text-[#1f2937] mb-2" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600 }}>
                 Office
               </h3>
-              <p className="text-[#6b7280] mb-4 text-sm">RMZ Millennia, Perungudi, Chennai</p>
+              <p className="text-[#6b7280] mb-4 text-sm">Innov8 Millenia, 2nd Floor, East Wing, RMZ Millenia Business Park, No.143, Dr.M.G.R. Road, Perungudi, Chennai 600096</p>
               <a 
-                href="https://www.google.com/maps/search/?api=1&query=RMZ+Millennia+Perungudi+Chennai" 
+                href="https://www.google.com/maps/search/?api=1&query=Innov8+Millenia+RMZ+Millenia+Business+Park+Perungudi+Chennai+600096" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-full bg-[#f97316] text-white px-6 py-2.5 rounded-lg hover:bg-[#ea580c] transition-colors"
@@ -777,7 +775,7 @@ function App() {
             <div>
               <ImageWithFallback
                 src={LogoFull}
-                alt="NestFly - Dream. Fly. Achieve."
+                alt="NestFly Logo"
                 className="h-16 w-auto mb-4 brightness-0 invert"
               />
               <p className="text-white/50 text-sm">Chennai, Tamil Nadu, India</p>
@@ -800,24 +798,18 @@ function App() {
               <div className="space-y-2 text-sm">
                 <p className="text-white/70">WhatsApp: +91 94421 58348</p>
                 <p className="text-white/70">Email: vengateshwaran17@gmail.com</p>
-                <p className="text-white/70">Office: RMZ Millennia, Perungudi, Chennai</p>
+                <p className="text-white/70">Innov8 Millenia, 2nd Floor, East Wing, RMZ Millenia Business Park, No.143, Dr.M.G.R. Road, Perungudi, Chennai 600096</p>
               </div>
             </div>
           </div>
 
           {/* Social Icons */}
           <div className="flex justify-center gap-6 mb-8 pt-8 border-t border-white/10">
-            <a href="#" className="text-white/70 hover:text-white transition-colors">
+            <a href="https://www.instagram.com/thenestfly" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
               <Instagram className="w-6 h-6" />
             </a>
-            <a href="#" className="text-white/70 hover:text-white transition-colors">
-              <Facebook className="w-6 h-6" />
-            </a>
-            <a href="#" className="text-white/70 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/company/nestfly/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
               <Linkedin className="w-6 h-6" />
-            </a>
-            <a href="#" className="text-white/70 hover:text-white transition-colors">
-              <Youtube className="w-6 h-6" />
             </a>
           </div>
 

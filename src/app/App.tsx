@@ -688,6 +688,44 @@ function App() {
         </div>
       </section>
 
+      {/* Register as a Student Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+            {/* QR Code */}
+            <div className="flex flex-col items-center">
+              <img
+                src="/student-register-qr.png"
+                alt="Scan to register as a student"
+                className="w-48 h-48 object-contain"
+              />
+              <p className="text-sm text-[#6b7280] mt-3 text-center">Scan to register</p>
+            </div>
+            {/* Text and Button */}
+            <div className="text-center md:text-left max-w-md">
+              <div className="inline-block bg-[#fff7ed] text-[#f97316] text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+                Student Registration
+              </div>
+              <h2 className="text-3xl font-bold text-[#1f2937] mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                Ready to start your journey?
+              </h2>
+              <p className="text-[#6b7280] mb-6 leading-relaxed">
+                Register as a student today. Our counsellors will reach out to guide you through university selection, applications, and everything in between. Free of charge, always.
+              </p>
+              <a
+                href="https://app.coursefinder.ai/student-platform/3b33097f/sign-up"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-[#f97316] text-white px-8 py-3 rounded-lg hover:bg-[#ea580c] transition-colors font-semibold text-lg"
+              >
+                Register as a Student
+              </a>
+              <p className="text-xs text-[#9ca3af] mt-3">Or scan the QR code with your phone camera</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section id="contact" className="py-20 bg-gradient-to-br from-[#1e40af] to-[#0891b2] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -776,7 +814,7 @@ function App() {
               <ImageWithFallback
                 src={LogoFull}
                 alt="NestFly Logo"
-                className="h-16 w-auto mb-4 brightness-0 invert"
+                className="h-16 w-auto mb-4"
               />
               <p className="text-white/50 text-sm">Chennai, Tamil Nadu, India</p>
             </div>

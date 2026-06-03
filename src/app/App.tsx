@@ -24,8 +24,8 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
-import LogoFull from '../imports/Logo.jpeg';
-import LogoIcon from '../imports/Logo_frame.jpeg';
+const LogoFull = '/logo.jpeg';
+const LogoIcon = '/logo-icon.jpeg';
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

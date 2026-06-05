@@ -138,7 +138,7 @@ function App() {
             {/* Hero Image */}
             <div className="hidden lg:block">
               <ImageWithFallback 
-                src="https://images.unsplash.com/photo-1648301033733-44554c74ec50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnRlcm5hdGlvbmFsJTIwdW5pdmVyc2l0eSUyMGNhbXB1cyUyMHN0dWRlbnRzfGVufDF8fHx8MTc4MDE0NzE5MHww&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/hero-student.png"
                 alt="International university campus with students"
                 className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
               />
@@ -761,9 +761,9 @@ function App() {
               <h3 className="text-lg text-[#1f2937] mb-2" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600 }}>
                 Email
               </h3>
-              <p className="text-[#6b7280] mb-4 text-sm">vengateshwaran17@gmail.com</p>
+              <p className="text-[#6b7280] mb-4 text-sm">contact@thenestfly.com</p>
               <a 
-                href="mailto:vengateshwaran17@gmail.com"
+                href="mailto:contact@thenestfly.com"
                 className="inline-flex items-center justify-center w-full bg-[#1e40af] text-white px-6 py-2.5 rounded-lg hover:bg-[#1e3a8a] transition-colors"
               >
                 Send email
@@ -833,7 +833,7 @@ function App() {
               <h4 className="mb-4" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600 }}>Contact</h4>
               <div className="space-y-2 text-sm">
                 <p className="text-white/70">WhatsApp: +91 94421 58348</p>
-                <p className="text-white/70">Email: vengateshwaran17@gmail.com</p>
+                <p className="text-white/70">Email: contact@thenestfly.com</p>
                 <p className="text-white/70">Innov8 Millenia, 2nd Floor, East Wing, RMZ Millenia Business Park, No.143, Dr.M.G.R. Road, Perungudi, Chennai 600096</p>
               </div>
             </div>

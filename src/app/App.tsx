@@ -561,7 +561,7 @@ function App() {
               </p>
               <div className="flex items-center gap-3">
                 <ImageWithFallback 
-                  src="https://images.unsplash.com/photo-1760552069234-54b9c04bbb05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHdvbWFuJTIwc3R1ZGVudCUyMHNtaWxpbmclMjBib29rc3xlbnwxfHx8fDE3ODAxNDcxOTR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200"
                   alt="Karthik Santhanam"
                   className="w-12 h-12 rounded-full object-cover"
                 />

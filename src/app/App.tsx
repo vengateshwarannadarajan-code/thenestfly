@@ -23,6 +23,15 @@ import {
 } from 'lucide-react';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
 import ConsultationForm from './components/ConsultationForm';
+
+const scrollTo = (id: string) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+    history.pushState(null, '', '/' + id);
+  }
+};
+
 const LogoFull = '/logo.jpeg';
 const LogoIcon = '/logo-icon.jpeg';
 
@@ -36,7 +45,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <a href="#home" className="flex items-center">
+            <a href="/home" onClick={(e) => { e.preventDefault(); scrollTo('home'); }} className="flex items-center">
               {/* Desktop Logo - Full version */}
               <ImageWithFallback
                 src={LogoFull}
@@ -53,16 +62,16 @@ function App() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
-              <a href="#home" className="text-[#1f2937] hover:text-[#0891b2] transition-colors">Home</a>
-              <a href="#services" className="text-[#1f2937] hover:text-[#0891b2] transition-colors">Services</a>
-              <a href="#destinations" className="text-[#1f2937] hover:text-[#0891b2] transition-colors">Destinations</a>
-              <a href="#contact" className="text-[#1f2937] hover:text-[#0891b2] transition-colors">Contact</a>
+              <a href="/home" onClick={(e) => { e.preventDefault(); scrollTo('home'); }} className="text-[#1f2937] hover:text-[#0891b2] transition-colors">Home</a>
+              <a href="/services" onClick={(e) => { e.preventDefault(); scrollTo('services'); }} className="text-[#1f2937] hover:text-[#0891b2] transition-colors">Services</a>
+              <a href="/destinations" onClick={(e) => { e.preventDefault(); scrollTo('destinations'); }} className="text-[#1f2937] hover:text-[#0891b2] transition-colors">Destinations</a>
+              <a href="/contact" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }} className="text-[#1f2937] hover:text-[#0891b2] transition-colors">Contact</a>
             </div>
 
             {/* CTA Button */}
             <div className="hidden md:block">
               <a 
-                href="#contact"
+                href="/contact" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }}
                 className="bg-[#f97316] text-white px-6 py-2.5 rounded-lg hover:bg-[#ea580c] transition-colors"
               >
                 Book Free Consultation
@@ -82,12 +91,12 @@ function App() {
           {mobileMenuOpen && (
             <div className="md:hidden py-4 border-t">
               <div className="flex flex-col gap-4">
-                <a href="#home" className="text-[#1f2937] hover:text-[#0891b2]" onClick={() => setMobileMenuOpen(false)}>Home</a>
-                <a href="#services" className="text-[#1f2937] hover:text-[#0891b2]" onClick={() => setMobileMenuOpen(false)}>Services</a>
-                <a href="#destinations" className="text-[#1f2937] hover:text-[#0891b2]" onClick={() => setMobileMenuOpen(false)}>Destinations</a>
-                <a href="#contact" className="text-[#1f2937] hover:text-[#0891b2]" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+                <a href="/home" onClick={(e) => { e.preventDefault(); scrollTo('home'); }} className="text-[#1f2937] hover:text-[#0891b2]" onClick={() => setMobileMenuOpen(false)}>Home</a>
+                <a href="/services" onClick={(e) => { e.preventDefault(); scrollTo('services'); }} className="text-[#1f2937] hover:text-[#0891b2]" onClick={() => setMobileMenuOpen(false)}>Services</a>
+                <a href="/destinations" onClick={(e) => { e.preventDefault(); scrollTo('destinations'); }} className="text-[#1f2937] hover:text-[#0891b2]" onClick={() => setMobileMenuOpen(false)}>Destinations</a>
+                <a href="/contact" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }} className="text-[#1f2937] hover:text-[#0891b2]" onClick={() => setMobileMenuOpen(false)}>Contact</a>
                 <a 
-                  href="#contact"
+                  href="/contact" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }}
                   className="bg-[#f97316] text-white px-6 py-2.5 rounded-lg text-center hover:bg-[#ea580c] transition-colors"
                 >
                   Book Free Consultation
@@ -121,13 +130,13 @@ function App() {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <a 
-                  href="#contact"
+                  href="/contact" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }}
                   className="bg-[#f97316] text-white px-8 py-3.5 rounded-lg hover:bg-[#ea580c] transition-all hover:scale-105 text-center"
                 >
                   Book Free Consultation
                 </a>
                 <a 
-                  href="#destinations" 
+                  href="/destinations" onClick={(e) => { e.preventDefault(); scrollTo('destinations'); }} 
                   className="border-2 border-white text-white px-8 py-3.5 rounded-lg hover:bg-white/10 transition-all text-center"
                 >
                   Explore Destinations
@@ -360,7 +369,7 @@ function App() {
                 <tr className="bg-[#eff6ff]">
                   <td colSpan={3} className="px-6 py-4 text-center text-[#1e40af]" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600 }}>
                     + 22 more countries | 796+ total universities | 
-                    <a href="#contact" className="ml-2 inline-flex items-center hover:underline">
+                    <a href="/contact" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }} className="ml-2 inline-flex items-center hover:underline">
                       Ask us <ChevronRight className="w-4 h-4 ml-1" />
                     </a>
                   </td>
@@ -398,7 +407,7 @@ function App() {
               <p className="text-[#1e40af]" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600 }}>
                 + 22 more countries | 796+ total universities
               </p>
-              <a href="#contact" className="inline-flex items-center text-[#1e40af] hover:underline mt-2">
+              <a href="/contact" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }} className="inline-flex items-center text-[#1e40af] hover:underline mt-2">
                 Ask us <ChevronRight className="w-4 h-4 ml-1" />
               </a>
             </div>
@@ -821,10 +830,10 @@ function App() {
             <div>
               <h4 className="mb-4" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 600 }}>Quick Links</h4>
               <div className="space-y-2">
-                <a href="#home" className="block text-white/70 hover:text-white transition-colors text-sm">Home</a>
-                <a href="#services" className="block text-white/70 hover:text-white transition-colors text-sm">Services</a>
-                <a href="#destinations" className="block text-white/70 hover:text-white transition-colors text-sm">Destinations</a>
-                <a href="#contact" className="block text-white/70 hover:text-white transition-colors text-sm">Contact</a>
+                <a href="/home" onClick={(e) => { e.preventDefault(); scrollTo('home'); }} className="block text-white/70 hover:text-white transition-colors text-sm">Home</a>
+                <a href="/services" onClick={(e) => { e.preventDefault(); scrollTo('services'); }} className="block text-white/70 hover:text-white transition-colors text-sm">Services</a>
+                <a href="/destinations" onClick={(e) => { e.preventDefault(); scrollTo('destinations'); }} className="block text-white/70 hover:text-white transition-colors text-sm">Destinations</a>
+                <a href="/contact" onClick={(e) => { e.preventDefault(); scrollTo('contact'); }} className="block text-white/70 hover:text-white transition-colors text-sm">Contact</a>
               </div>
             </div>
 
